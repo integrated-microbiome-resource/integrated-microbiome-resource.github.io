@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>CGEB - Integrated Microbiome Resource (IMR)</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="Information and access to services provided by the Dalhousie University Integrated Microbiome Resource" />
+		<meta name="keywords" content="microbiome, Dalhousie, Halifax, NGS, 16S, 18S, metagenomics, metatranscriptomics, MiSeq, Illumina" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/jquery.onvisible.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-65099719-1', 'auto');
+			ga('send', 'pageview');
+
+		</script>
+
+		<script>
+			// Reduce the effect of FOUC (init.js always sets html display to block)
+			var html_el = document.getElementsByTagName('html')[0];
+			html_el.style.display = 'none';
+		</script>
+
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+			<link rel="stylesheet" href="css/style-noscript.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body class="no-sidebar">
+
+		<!-- Header -->
+			<div id="header">
+
+				<!-- Inner -->
+					<div class="inner">
+						<header>
+							<h1><a href="index.html" id="logo">Integrated Microbiome Resource (IMR)</a></h1>
+						</header>
+					</div>
+				
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About Us</a></li>
+							<li><a href="achieve.html">Achievements</a></li>
+							<li><a href="submissions.html">Submission Guidelines</a></li>
+							<li><a href="queue.html">Real-Time Queue</a></li>
+							<li><a href="pricing.html">Pricing</a></li>
+							<li><a href="protocols.html">Protocols</a></li>
+							<li><a href="contact.html">Contact Us</a></li>
+						</ul>
+					</nav>
+
+			</div>
+			
+		<!-- Main -->
+			<div class="wrapper style1">
+
+				<div class="container">
+					<article id="main" class="special">
+						<header>
+							<h2>Protocols</h2>
+						</header>
+						<section>
+							<p>The following protocol summaries are for the generation of paired-end sequencing reads of 16S or 18S PCR amplicons with multiple barcodes (ie: "indices") on the Illumina MiSeq 
+							machine of length approx. 400-500 bp (300+300 bp with ~100-200 bp overlap). It assumes an input of up to 384 (380 samples + 4 PCR controls). These protocols are a synthesis of multiple 
+							sources in the current scientific literature, but draws mainly from the following sources:
+							<ul class="default">
+								<li><a href="http://msystems.asm.org/content/2/1/e00127-16" target="new"><b>Comeau AM, Douglas GM, Langille M.</b> 2017. Microbiome Helper: A custom and streamlined workflow for microbiome research. <i>mSystems</i>, 2:e00127-16.</a> [<font style="color: red;">overview of the entire IMR wet-lab and bioinformatics pipeline</font>]
+								<li><a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0027492" target="new"><b>Comeau AM, Li WK, Tremblay JE, Carmack EC, Lovejoy C.</b> 2011. Arctic Ocean microbial community structure before and after the 2007 record sea ice minimum. <i>PLoS ONE</i>, 6:e27492.</a> [<font style="color: red;">initial 16S V6-V8 and 18S V4 primer design/sequences</font>]
+								<li><a href="http://msystems.asm.org/content/1/1/e00009-15" target="new"><b>Walters W, et al.</b> 2015. Improved bacterial 16S rRNA gene (V4 and V4-5) and fungal Internal Transcribed Spacer marker gene primers for microbial community surveys. <i>mSystems</i>, 1:e00009-15.</a> [<font style="color: red;">16S V4-V5 primer design/sequences</font>]
+								<li><a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0097629" target="new"><b>Op De Beeck M, Lievens B, Busschaert P, Declerck S, Vangronsveld J, Colpaert JV</b> 2014. Comparison and validation of some ITS primer pairs useful for fungal metabarcoding studies. <i>PLoS ONE</i>, 9:e97629.</a> [<font style="color: red;">ITS2 primer design/sequences</font>]
+								<li><b>Earth Microbiome Project (EMP)</b> at <a href="http://www.earthmicrobiome.org/protocols-and-standards/" target="new">www.earthmicrobiome.org/protocols-and-standards/</a> [<font style="color: red;">blocking protocol for eukaryote contaminants</font>]
+								<li><b>Human Microbiome Project (HMP)</b> at <a href="http://hmpdacc.org/resources/tools_protocols.php" target="new">hmpdacc.org/resources/tools_protocols.php</a> [<font style="color: red;">general considerations/extraction for stool samples</font>]
+							</ul>
+
+						</section>
+						<section>
+							<header>
+								<a name="collect"></a><h3>Sample Collection</h3>
+							</header>
+							<p>Sample collection issues can be very specific to your sample type (ie: the medium which you are sampling) - many of our IMR projects so far focus on water column "environmental" 
+							samples or fecal matter. For the former, varying volumes of water are typically collected onto filters and frozen at -20&deg;C or -80&deg;C in a storage buffer. For the latter, fresh fecal 
+							pellets are collected from mice or human stool is sampled and then frozen immediately at -20&deg;C or -80&deg;C (without buffer). All samples are kept frozen until extraction below. 
+							For transcriptomics approaches for environmental, lab culture or biopsy samples (not recommended for stool), samples must be immediately flash-frozen in liquid nitrogen after collection.
+							</p>
+						</section>
+						<section>
+							<header>
+								<a name="extract"></a><h3>DNA/RNA Extraction</h3>
+							</header>
+							<p>DNA/RNA is extracted from the samples using the method/kit appropriate to the specific samples - this may also be a choice you make for your personal samples since you have experience 
+							with them, or you may wish to follow our choice extraction methods. There is no general consensus in the literature on choice of kits, other than to say all of them affect the 
+							final profiles to some degree and that bead-beating is most probably a must for difficult materials (and/or with Gram+ves and protist cysts) - we have currently evaluated and
+							are using the <b>MO BIO PowerFecal DNA Kit</b> with mouse pellets and human fecal samples. We are also testing various DNA kits for use with human urine. We have not yet ventured into 
+							RNA kits for metatranscriptomes, but this is something that we will be examining in the near future. Quantification and quality-checks are done (via NanoDrop or PicoGreen/Qubit) to 
+							verify success. <i>Optional: A gel can be run to verify integrity (generally unnecessary for PCR-only studies, but required for shotgun metagenomic sequencing).</i>
+							</p>
+						</section>
+						<section>
+							<header>
+								<a name="library"></a><h3>Library Preparation</h3>
+							</header>
+						</section>
+						<section>
+							<header>
+								<a name="libAmp"></a><h3><i>&rarr; 16S/18S/ITS Amplicons</i></h3>
+							</header>
+							<p>Amplicon fragments are PCR-amplified from the DNA in duplicate using separate template dilutions (generally 1:1 & 1:10) using the high-fidelity <b>Phusion</b> polymerase. A 
+							single round of PCR is done using "fusion primers" (Illumina adaptors + indices + specific regions) targeting either the <b>16S V6-V8</b> (Bacteria/Archaea; ~440-450 bp), 
+							<b>16S V4-V5</b> (primarily Bacteria; ~410 bp), <b>18S V4</b> (Eukarya; ~440 bp) or <b>ITS2</b> (Fungi; variable length, avg. ~350 bp) regions with multiplexing which allows up to 
+							380 samples to be run. PCR products are verified visually by running on a high-throughput <b>Hamilton Nimbus Select</b> robot using <b>Coastal Genomics Analytical Gels</b>. Any samples with failed PCRs (or spurious bands) are 
+							re-amplified by optimizing PCR conditions to produce correct bands in order to complete the sample plate before continuing. The PCR reactions from the same samples are pooled in 
+							one plate, then cleaned-up and normalized using the high-throughput <b>Charm Biotech Just-a-Plate 96-well Normalization Kit</b>. The (up to) 380 samples are then pooled to make one library 
+							which is then quantified fluorometrically before sequencing.
+							</p>
+						</section>
+						<section>
+							<header>
+								<a name="libMetaG"></a><h3><i>&rarr; (Meta)genomes ("Shotgun")</i></h3>
+							</header>
+							<p>Microbial (or mtDNA) genomes and community metagenomes are prepared either using: 1) the <b>Illumina Nextera Flex</b> kit for MiSeq+NextSeq, which requires a very small amount 
+							of starting material (1 ng) as it is a PCR-based library preparation procedure; or 2) the <b>PacBio SMRTbell Template Prep</b> kit for the Sequel, which requires much more HMW DNA 
+							since it is not PCR-based. For the Illumina method, samples are "tagmented" (enzymatically "sheared" and tagged with adaptors), PCR amplified while adding barcodes, purified using 
+							columns or beads, normalized using Illumina beads or manually, then pooled for loading onto the MiSeq or NextSeq. For the PacBio method, a large amount of HMW DNA is mechanically 
+							sheared (<b>Covaris gTubes</b>), optionally size-selected, repaired, converted into SMRTbell libraries, cleaned-up and normalized, then pooled for loading onto the Sequel. 
+							</p>
+						</section>
+						<section>
+							<header>
+								<a name="libMetaT"></a><h3><i>&rarr; (Meta)transcriptomes ("RNA-Seq")</i></h3>
+							</header>
+							<p>We are currently in the process of evaluating <b>Illumina (Ribo-Zero + TruSeq Stranded mRNA LT)</b> vs. <b>NuGEN (Ovation Complete Prokaryotic RNA-Seq)</b> kits for the 
+							production of sufficiently rRNA-depleted libraries for RNA-Seq. Briefly, after rRNA depletion, remaining mRNAs are converted to cDNA in a way that maintains stranded information, 
+							tagged with adaptors+barcodes, PCR amplified, purified using columns or beads, normalized using beads or manually, then pooled for loading onto the MiSeq or NextSeq.
+							</p>
+						</section>
+						<section>
+							<header>
+								<a name="NGS"></a><h3>Next-Generation Sequencing</h3>
+							</header>
+							<p>
+								Amplicon samples, small metagenomic sets, and small genomes are run on our <b>Illumina MiSeq</b> using 300+300 bp paired-end V3 chemistry which	allows for overlap and 
+								stitching togther of paired amplicon reads into one full-length read of higher quality. Output is generally ~20-22 million raw reads and ~13 Gb of sequence = ~50,000 reads 
+								per sample for 380 amplicons. <i>De novo</i> genomes are run on our <b>PacBio Sequel</b> using v3 chemistry which outputs roughly 30-40 Gb of sequence per cell of variable 
+								(long) lengths. For larger metagenomic/metatranscriptomic projects, we run on our hospital-shared <b>Illumina NextSeq 550</b> using 150+150 bp paired-end "high output" 
+								chemistry generating up to ~400 million raw reads and ~120 Gb of sequence.
+							</p>
+						</section>
+						<section>
+							<header>
+								<a name="NGS"></a><h3>Bioinformatics Analyses</h3>
+							</header>
+							<p>
+								Details of our amplicon and metagenomics pipelines are available at <a href="https://github.com/mlangill/microbiome_helper/wiki" target="new">https://github.com/mlangill/microbiome_helper/wiki</a>, 
+								but the following is a summary of the major deliverables clients will receive (analyses will require a "mapping file" from the clients containing any relevant metadata for 
+								the study):
+								<p><i><b>16S/18S/ITS Amplicon Analysis</b></i>
+								<ul class="default">
+									<li>Final ASV/OTU tables in text, BIOM and STAMP formats
+									<li>Accompanying QIIME-formatted mapping/metadata file
+									<li>FASTA file of representative sequences (one per ASV/OTU)
+									<li>Phylogenetic tree of ASVs/OTUs placed within reference sequences
+									<li>Taxonomic assignment files at various levels (ex: phylum, genus, etc.)
+									<li>Alpha-diversity rarefaction plots + statistics
+									<li>Beta-diversity UniFrac plots
+									<li>Logfiles from the various major steps in the QC process
+									<li>Functional prediction files generated from PICRUSt2.0 (if requested)
+								</ul>
+								<p><i><b>Metagenomics Analysis</b></i>
+								<ul class="default">
+									<li>FASTA files of the final sequences screened to remove human (or other) contaminants (available upon request)
+									<li>Taxonomic composition of the samples from MetaPhlAn 2.0 (text and STAMP files)
+									<li>Stratified (by taxa) and unstratified functional prediction files generated from HUMAnN 2.0 (text and STAMP files) for individual UniRef90 gene families and MetaCyc pathways
+								</ul>
+								<p><b>Custom Bioinformatics:</b> Additional bioinformatic analyses can be requested at an hourly rate or through research collaboration. Please contact us for more details.
+							</p>
+						</section>
+					</article>
+					</div>
+				</div>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+							<!-- Copyright -->
+								<div class="copyright">
+									<ul class="menu">
+										<li>&copy; CGEB-IMR (2014+). All rights reserved.</li><li>Design template: <a href="http://html5up.net" target="new">HTML5 UP</a></li>
+									</ul>
+								</div>
+							
+			</div>
+
+	</body>
+</html>

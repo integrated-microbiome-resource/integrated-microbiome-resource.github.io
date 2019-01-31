@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>CGEB - Integrated Microbiome Resource (IMR)</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="Information and access to services provided by the Dalhousie University Integrated Microbiome Resource" />
+		<meta name="keywords" content="microbiome, Dalhousie, Halifax, NGS, 16S, 18S, metagenomics, metatranscriptomics, MiSeq, Illumina" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/jquery.onvisible.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-65099719-1', 'auto');
+			ga('send', 'pageview');
+
+		</script>
+
+		<script>
+			// Reduce the effect of FOUC (init.js always sets html display to block)
+			var html_el = document.getElementsByTagName('html')[0];
+			html_el.style.display = 'none';
+		</script>
+
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+			<link rel="stylesheet" href="css/style-noscript.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body class="no-sidebar">
+
+		<!-- Header -->
+			<div id="header">
+
+				<!-- Inner -->
+					<div class="inner">
+						<header>
+							<h1><a href="index.html" id="logo">Integrated Microbiome Resource (IMR)</a></h1>
+						</header>
+					</div>
+				
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About Us</a></li>
+							<li><a href="achieve.html">Achievements</a></li>
+							<li><a href="submissions.html">Submission Guidelines</a></li>
+							<li><a href="queue.html">Real-Time Queue</a></li>
+							<li><a href="pricing.html">Pricing</a></li>
+							<li><a href="protocols.html">Protocols</a></li>
+							<li><a href="contact.html">Contact Us</a></li>
+						</ul>
+					</nav>
+
+			</div>
+			
+		<!-- Main -->
+			<div class="wrapper style1">
+
+				<div class="container">
+					<article id="main" class="special">
+						<header>
+							<h2>IMR Achievements</h2>
+						</header>
+						<section>
+							<header>
+								<h3>IMR Overall Progress</h3>
+							</header>
+							<p>
+								As of the end of September 2017, we've completed over <b>119 runs</b>, containing over <b>34,000 samples</b>, covering <b>421 different scientific projects</b> of <b>122 Principle 
+								Investigators</b> (IMR Members, other academics and commercial clients). We have sequenced over <b>7 billion reads</b> containing over <b>2.6 trillion bases</b>...and 
+								these numbers are growing continuously...
+								<p><center><img src="images/IMR-ProgressSep2017.png" width="700"></center>
+							</p>
+						</section>
+						<section>
+							<header>
+								<h3>Summary of Sample Types/Origins</h3>
+							</header>
+							<p>
+								The 421 different projects so far undertaken at the IMR cover varying subjects, ranging from "pure" <b>environmental research of the oceans</b> to applied research in 
+								<b>wastewater treatment and bioreactors</b> to <b>mouse model studies and human clinical trials</b>. The range of sample types/origins so far examined are outlined in the 
+								below infographics:
+								<p><center><img src="images/SamplesSep2017.png" width="700"></center>
+							<p>
+								The following is a map of the origins of our clients (with samples originating from an even wider geographic area, depending on the research project): 
+								<p><center><iframe id="map" width="800" height="480"></iframe></center>
+						</section>
+					</article>
+					</div>
+				</div>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+							<!-- Copyright -->
+								<div class="copyright">
+									<ul class="menu">
+										<li>&copy; CGEB-IMR (2014+). All rights reserved.</li><li>Design template: <a href="http://html5up.net" target="new">HTML5 UP</a></li>
+									</ul>
+								</div>
+							
+			</div>
+		<script>
+			$(function() {
+				$(window).on('load', function() {
+					// Re-set the iframe src to fix a display issue resulting from hiding
+					// the html content on load (to fix FOUC).
+    			$('iframe#map').attr(
+    				'src',
+						'https://www.google.com/maps/d/u/0/embed?mid=zaA_XBPQv_vU.kX_CeIHzdZmA'
+					);
+				});
+			});
+		</script>
+	</body>
+</html>
